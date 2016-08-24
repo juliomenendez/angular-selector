@@ -425,7 +425,7 @@
 							return !scope.inOptions(selectedValues, option);
 						});
 					else {
-						var index = scope.filteredOptions.indexOf(scope.selectedValues[0]);
+						var index = scope.selectedValues ? scope.filteredOptions.indexOf(scope.selectedValues[0]) : -1;
 						if (index >= 0) scope.highlight(index);
 					}
 				};
